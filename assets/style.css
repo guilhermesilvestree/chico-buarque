@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* --- Reset Básico e Estilos Gerais --- */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@ body {
     padding-top: 100px;
 }
 
-/* --- Barra de Navegação --- */
 .navbar {
     width: 100%;
     padding: 1rem 0;
@@ -66,14 +64,12 @@ body {
     transform: scale(1.1);
 }
 
-/* Estilo para os ícones SVG dentro dos links */
 .main-nav svg {
     width: 26px;
     height: 26px;
     stroke: currentColor;
 }
 
-/* --- Container Principal --- */
 .container {
     width: 85%;
     max-width: 1200px;
@@ -81,8 +77,6 @@ body {
     gap: 2rem;
     align-items: flex-end;
 }
-
-/* --- Coluna da Esquerda (Texto e Álbuns) --- */
 .content-left {
     width: 65%;
     display: flex;
@@ -105,7 +99,6 @@ body {
     margin-bottom: 2rem;
 }
 
-/* --- Galeria de Álbuns --- */
 .album-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -125,7 +118,6 @@ body {
     transform: scale(1.05);
 }
 
-/* --- Coluna da Direita (Foto e Resumo) --- */
 .content-right {
     width: 35%;
     display: flex;
@@ -157,7 +149,6 @@ body {
     line-height: 1.5;
 }
 
-/* --- Estilos Gerais de Seção --- */
 .section-title {
     font-family: 'Vollkorn', serif;
     font-size: 2.5rem;
@@ -166,7 +157,6 @@ body {
     color: #333;
 }
 
-/* --- Seção Linha do Tempo --- */
 .timeline {
     width: 85%;
     max-width: 1200px;
@@ -186,7 +176,6 @@ body {
     gap: 2rem;
     align-items: center;
 }
-/* Alterna a direção dos itens da timeline */
 .timeline-item:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -225,7 +214,6 @@ body {
     object-fit: cover;
 }
 
-/* --- Efeito Hover nas Imagens --- */
 .image-container {
     position: relative;
     display: block;
@@ -233,7 +221,6 @@ body {
     border-radius: 4px;
 }
 
-/* Garante que a imagem preencha o novo container */
 .image-container img {
     width: 100%;
     display: block;
@@ -257,7 +244,6 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Efeito ao passar o mouse */
 .image-container:hover .image-caption {
     opacity: 1;
     transform: translateY(0);
@@ -267,8 +253,6 @@ body {
     transform: scale(1.05);
 }
 
-
-/* --- Seção História da Censura --- */
 .censorship-story {
     background-color: #343a40;
     color: #f4f4f4;
@@ -319,7 +303,6 @@ body {
     font-style: normal; 
 }
 
-/* Adiciona as aspas antes e depois da citação */
 .quote::before,
 .quote::after {
     content: '"';
@@ -358,14 +341,12 @@ body {
     font-style: italic;
 }
 
-/* --- Player do Spotify --- */
 .spotify-embed {
     width: 100%;
     max-width: 700px;
     margin-top: 3rem; 
 }
 
-/* --- Estilo do Título da Galeria --- */
 .gallery-title {
     font-family: 'Vollkorn', serif;
     font-size: 1.3rem;
@@ -383,7 +364,6 @@ body {
     transform: scale(1);
 }
 
-/* --- Rodapé --- */
 .site-footer {
     width: 100%;
     background-color: #343a40; 
@@ -438,7 +418,6 @@ body {
     stroke: currentColor;
 }
 
-/* --- Media Queries para Responsividade --- */
 
 @media (max-width: 1024px) {
     .container, .timeline, .censorship-story .container, .footer-content {
@@ -463,7 +442,6 @@ body {
     }
 }
 
-/* Para telas menores que 768px (Celulares) */
 @media (max-width: 768px) {
     main {
         padding-top: 20px;
